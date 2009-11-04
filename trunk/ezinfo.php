@@ -3,7 +3,7 @@
  * 
  * @version    1.0
  * @package    epoAgreement
- * @subpackage CheckBox
+ * @subpackage datatypes.epoagreementcheckbox
  * @author     epo-jbenoit <jbmurat@messcenes.fr>
  * @copyright  Copyright (C) 2009 www.e-nitiativepopulaire.fr
  * @license    GNU General Public License v2.0
@@ -28,13 +28,17 @@
  *  You can read this tutorial at http://ez.no/fr/developer/articles/creating_datatypes_in_ez_publish_4
  */
  
-return array (
-  'epoAgreementInfo'                        => './ezinfo.php',
-  'epoDatatypeForm'                         => './interfaces/epodatatypeform.php',
-  'epoAgreementInvalidParamsException'      => './exceptions/epoagreementinvalidparamsexception.php',
-  'epoAgreementCheckBox'                    => './datatypes/epoagreementcheckbox/epoagreementcheckbox.php',
-  'epoAgreementCheckBoxType'                => './datatypes/epoagreementcheckbox/epoagreementcheckboxtype.php',
-  'epoDatatypeAgreementCheckBoxClassForm'   => './datatypes/epoagreementcheckbox/epodatatypeagreementcheckboxclassform.php',
-  'epoDatatypeAgreementCheckBoxObjectForm'  => './datatypes/epoagreementcheckbox/epodatatypeagreementcheckboxobjectform.php',
-);
+class epoAgreementInfo
+{
+    static function info()
+    {
+        return array(
+            'Name' => "epoAgreement",
+            'Version' => "1.0",
+            'Author' => "<a href='http://www.e-nitiativepopulaire.fr'>Jean-Benoît Murat</a>",
+            'Copyright' => "Copyright (C) 2009 www.e-nitiativepopulaire.fr",
+            'License' => "GNU General Public License v2.0",
+        );
+    }
+}
 ?>

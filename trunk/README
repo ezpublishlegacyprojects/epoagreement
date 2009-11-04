@@ -1,0 +1,53 @@
+Star Rating Module
+===========================
+This extension provide a new eZPublish 4 datatype displayed as a checkbox wich value is 
+the current date. This typically can be used to tell a user agreement while he is registering.
+
+This extension provide a new eZPublish 4 datatype displayed as a checkbox wich value is 
+the current date. This typically can be used to tell a user agreement while he is registering.
+
+You can see a demo of this datatype on my website www.e-nitiativepopulaire.fr in the register 
+form.
+
+Installation
+-----------------
+Follow these steps to add the Star Rating module to your eZ publish installation:
+
+  1) Extract the archive into the /extension directory
+
+  2) Edit site.ini.append in /settings/override. Add the following to the file:
+
+       [ExtensionSettings]
+       ActiveExtensions[]=epoagreement
+
+     If you already have the [ExtensionSettings] block, just add the second line.
+
+     Alternatively activate the extension via the Admin interface.
+
+  4) Clear Cache
+
+Usage
+----------------
+
+To use, add a Agreement CheckBox attribute to the content class you want to be published 
+with user agreement.  
+
+If you give an article node id while adding this attribute to your content class, the intro 
+of this article is displayed before the checkbox and a link make possible to read the full 
+article (agreement terms).
+
+If you configure the attribute as required, it is impossible to create or update an instance 
+of your content class without checking the box.
+
+License
+-----------------
+
+This file may be distributed and/or modified under the terms of the "GNU
+General Public License" version 2 as published by the Free Software Foundation
+
+This file is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
+WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+The "GNU General Public License" (GPL) is available at
+http://www.gnu.org/copyleft/gpl.html.
+
